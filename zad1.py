@@ -3,7 +3,7 @@ import unittest
 
 class hamming:
     def distance(genom1, genom2):
-        if type(genom1) or type(genom2) != str or len(genom1) != len(genom2):
+        if type(genom1) != str or type(genom2) != str or len(genom1) != len(genom2):
             raise ValueError("bad")
         genom1, genom2 = genom1.upper(), genom2.upper()
         diffs = 0
